@@ -4,7 +4,7 @@ This repository contains Python code to decode Mikrotik Network Discovery Protoc
 ## Contents
 
 - `mndp.py`: Contains the MNDP packet decoding functionality.
-- `test_mndp.py`: Script to listen for MNDP packets on UDP port 5678, decode them, and print the results.
+- `listen_mndp_packets.py`: Script to listen for MNDP packets on UDP port 5678, decode them, and print the results.
 
 ## Installation
 
@@ -33,15 +33,15 @@ This repository contains Python code to decode Mikrotik Network Discovery Protoc
 
 2. **Run the Listener Script**
 
-   Run `test_mndp.py` to start listening for MNDP packets on UDP port 5678:
+   Run `python listen_mndp_packets.py` to start listening for MNDP packets on UDP port 5678:
     ```sh
-    python test_mndp.py
+    python3 listen_mndp_packets.py # for linux
     ```
 
    The script will output the decoded packet details.
 
 ## Example
-```python test_mndp.py
+```python  listen_mndp_packets.py
 Listening on port 5678...
 Received packet from ('10.20.30.3', 5678)
 Sequence Number: 4
